@@ -1,4 +1,4 @@
-package com.andryyu.webview.SafeWebViewBridge;
+package com.andryyu.webview.safebridge;
 
 import android.util.Log;
 import android.webkit.JsPromptResult;

@@ -1,0 +1,14 @@
+<com.andryyu.webview.refreshview.WebViewPullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/david_webview_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.andryyu.webview.refreshview.SafeWebView
+        android:id="@+id/safe_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.andryyu.webview.refreshview.WebViewPullToRefreshView>

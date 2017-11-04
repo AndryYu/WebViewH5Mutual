@@ -6,7 +6,7 @@
  * Copyright: Copyright (c) 2013
  */
 
-package com.andryyu.webview.SafeWebViewBridge;
+package com.andryyu.webview.safebridge;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,7 +17,6 @@ import android.telephony.TelephonyManager;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-import com.andryyu.webview.SafeWebViewBridge.JsCallback;
 import com.andryyu.webview.utils.TaskExecutor;
 
 import org.json.JSONException;

@@ -1,4 +1,4 @@
-package com.andryyu.webview.SafeWebViewBridge;
+package com.andryyu.webview.safebridge;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,10 +7,8 @@ import android.webkit.JsResult;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.andryyu.webview.SafeWebViewBridge.HostJsScope;
-import com.andryyu.webview.SafeWebViewBridge.InjectedChromeClient;
-
 public class WebActivity extends Activity {
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

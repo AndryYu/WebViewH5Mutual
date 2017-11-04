@@ -12,11 +12,14 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.andryyu.webview.SafeWebViewBridge.WebActivity;
+import com.andryyu.webview.fileUpload.FileUploadActivity;
+import com.andryyu.webview.javatojs.JavaToJsActivity;
+import com.andryyu.webview.refreshview.DavidWebViewActivity;
+import com.andryyu.webview.safebridge.WebActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String[] datas = new String[]{"Js通信（主要解决android4.2以下漏洞）", "Js 通信文件上传,兼用Android 4.4Kitkat"};
+    public static final String[] datas = new String[]{"Android调用JS","Js通信（主要解决android4.2以下漏洞）", "Js 通信文件上传,兼用Android 4.4Kitkat","下拉回弹效果"};
     private ListView mListView;
     private Toolbar mToolbar;
     private TextView mTitleTextView;
@@ -57,7 +60,16 @@ public class MainActivity extends AppCompatActivity {
         switch (position) {
             /*Activity agentWeb*/
             case 0:
+                startActivity(new Intent(this, JavaToJsActivity.class));
+                break;
+            case 1:
                 startActivity(new Intent(this, WebActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(this, FileUploadActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(this, DavidWebViewActivity.class));
                 break;
             default:
                 break;

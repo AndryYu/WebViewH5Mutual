@@ -1,10 +1,9 @@
-package com.andryyu.webview.SafeWebViewBridge;
+package com.andryyu.webview.safebridge;
 
 import android.text.TextUtils;
 import android.util.Log;
 import android.webkit.WebView;
 
-import com.andryyu.webview.SafeWebViewBridge.JsCallback;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;

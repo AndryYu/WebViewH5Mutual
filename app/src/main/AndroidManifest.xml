@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.andryyu.webview">
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -19,8 +20,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SafeWebViewBridge.WebActivity"
-            android:theme="@style/BaseAppTheme"/>
+            android:name=".safebridge.WebActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity android:name=".fileUpload.FileUploadActivity" />
+        <activity android:name=".javatojs.JavaToJsActivity"/>
+        <activity android:name=".refreshview.DavidWebViewActivity"/>
     </application>
 
 </manifest>
